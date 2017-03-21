@@ -1,0 +1,15 @@
+PODS:
+  - EasyTipView (1.0.2)
+  - FSCalendar (2.7.3)
+
+DEPENDENCIES:
+  - EasyTipView (~> 1.0.2)
+  - FSCalendar
+
+SPEC CHECKSUMS:
+  EasyTipView: b93a19be981cc2221d6d7191d49872f547e0bebf
+  FSCalendar: 574388d70778c22719eed9341653e1743b345573
+
+PODFILE CHECKSUM: a8b341dd6ee5e8f22f4be328a983faa399f3ddda
+
+COCOAPODS: 1.2.0

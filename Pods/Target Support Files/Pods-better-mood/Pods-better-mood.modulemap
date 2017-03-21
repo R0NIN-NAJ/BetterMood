@@ -1,0 +1,6 @@
+framework module Pods_better_mood {
+  umbrella header "Pods-better-mood-umbrella.h"
+
+  export *
+  module * { export * }
+}
