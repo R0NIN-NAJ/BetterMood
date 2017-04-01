@@ -19,9 +19,6 @@ class MainView: UIViewController, FSCalendarDataSource, FSCalendarDelegate{
     
     private let dataSource = DataSource()
     
-    private let customAlertView = CustomAlertView() as UIView
-
-    
     let cellReuseIdentifier = "cell"
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,13 +39,7 @@ class MainView: UIViewController, FSCalendarDataSource, FSCalendarDelegate{
 
         
     }
-    
-    @IBAction func addEmotionAction(_ sender: UIButton) {
-        
-        customAlertView
-        
-    }
-    
+
 }
 
 

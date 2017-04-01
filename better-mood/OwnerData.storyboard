@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Owner Data View Controller-->
+        <scene sceneID="T9V-hR-OOv">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreen" id="vnr-BO-C1x" customClass="OwnerDataViewController" customModule="better_mood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbh-pv-r3g"/>
+                        <viewControllerLayoutGuide type="bottom" id="CTi-kK-7fK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EwB-Rj-V9A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNc-HL-48B">
+                                <rect key="frame" x="146" y="60" width="84.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9F-40-gST">
+                                <rect key="frame" x="163.5" y="152" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SD-RS-YGu" customClass="roundButton" customModule="better_mood" customModuleProvider="target">
+                                <rect key="frame" x="138" y="547" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GIW-Xc-xzy"/>
+                                    <constraint firstAttribute="height" constant="100" id="esG-hf-n8e"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextView:" destination="vnr-BO-C1x" eventType="touchUpInside" id="QLB-W8-OId"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CTi-kK-7fK" firstAttribute="top" secondItem="4SD-RS-YGu" secondAttribute="bottom" constant="20" id="2Pc-Iy-GDs"/>
+                            <constraint firstItem="r9F-40-gST" firstAttribute="top" secondItem="YNc-HL-48B" secondAttribute="bottom" constant="50" id="Lt4-tl-XwO"/>
+                            <constraint firstItem="YNc-HL-48B" firstAttribute="centerX" secondItem="EwB-Rj-V9A" secondAttribute="centerX" id="OlN-NZ-ft9"/>
+                            <constraint firstItem="4SD-RS-YGu" firstAttribute="centerX" secondItem="EwB-Rj-V9A" secondAttribute="centerX" id="XdU-4r-cTx"/>
+                            <constraint firstItem="r9F-40-gST" firstAttribute="centerX" secondItem="EwB-Rj-V9A" secondAttribute="centerX" id="lbV-8r-D9t"/>
+                            <constraint firstItem="YNc-HL-48B" firstAttribute="top" secondItem="Hbh-pv-r3g" secondAttribute="bottom" constant="40" id="pTl-KB-r9r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutLabel" destination="r9F-40-gST" id="8PH-iE-3Pu"/>
+                        <outlet property="nextButton" destination="4SD-RS-YGu" id="vTf-Pl-Uzs"/>
+                        <outlet property="welcomeLabel" destination="YNc-HL-48B" id="9D4-6u-WM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULl-vc-TDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow" width="256" height="256"/>
+    </resources>
+</document>

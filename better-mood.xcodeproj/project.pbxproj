@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1DC9F0790F6EA14E2113C847 /* Pods_better_mood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FB83D17EF1F059D4FB696B /* Pods_better_mood.framework */; };
+		3DDB2A761E8F3F8E009F91B0 /* OwnerData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB2A751E8F3F8E009F91B0 /* OwnerData.storyboard */; };
+		3DDB2A781E8F460C009F91B0 /* OwnerDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */; };
+		3DDB2A7B1E8F61E5009F91B0 /* roundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB2A7A1E8F61E5009F91B0 /* roundButton.swift */; };
 		8AEAF07A1E7DD35C003AC8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */; };
 		8AEAF07C1E7DD35C003AC8C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07B1E7DD35C003AC8C3 /* MainView.swift */; };
 		8AEAF07F1E7DD35C003AC8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEAF07D1E7DD35C003AC8C3 /* Main.storyboard */; };
@@ -18,11 +21,13 @@
 		8AEAF0931E7F4F1A003AC8C3 /* MainViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF0921E7F4F1A003AC8C3 /* MainViewDataSource.swift */; };
 		8AEAF0961E7F54A2003AC8C3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF0951E7F54A2003AC8C3 /* UIViewExtensions.swift */; };
 		8AEAF09A1E7F5D22003AC8C3 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF0991E7F5D22003AC8C3 /* PushButtonView.swift */; };
-		8AEAF09C1E7F7C61003AC8C3 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF09B1E7F7C61003AC8C3 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17FB83D17EF1F059D4FB696B /* Pods_better_mood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_better_mood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDB2A751E8F3F8E009F91B0 /* OwnerData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OwnerData.storyboard; sourceTree = "<group>"; };
+		3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerDataViewController.swift; sourceTree = "<group>"; };
+		3DDB2A7A1E8F61E5009F91B0 /* roundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundButton.swift; sourceTree = "<group>"; };
 		4C952C0606D394310DABDD91 /* Pods-better-mood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-better-mood.release.xcconfig"; path = "Pods/Target Support Files/Pods-better-mood/Pods-better-mood.release.xcconfig"; sourceTree = "<group>"; };
 		8AEAF0761E7DD35C003AC8C3 /* better-mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "better-mood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		8AEAF0921E7F4F1A003AC8C3 /* MainViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewDataSource.swift; sourceTree = "<group>"; };
 		8AEAF0951E7F54A2003AC8C3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		8AEAF0991E7F5D22003AC8C3 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
-		8AEAF09B1E7F7C61003AC8C3 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		F36760AA48D0F588CCE5589A /* Pods-better-mood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-better-mood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-better-mood/Pods-better-mood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DDB2A741E8F3F58009F91B0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3DDB2A751E8F3F8E009F91B0 /* OwnerData.storyboard */,
+				8AEAF07D1E7DD35C003AC8C3 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		3DDB2A791E8F48DB009F91B0 /* OwnerData */ = {
+			isa = PBXGroup;
+			children = (
+				3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */,
+			);
+			name = OwnerData;
+			sourceTree = "<group>";
+		};
 		8AEAF06D1E7DD35B003AC8C3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +94,13 @@
 		8AEAF0781E7DD35C003AC8C3 /* better-mood */ = {
 			isa = PBXGroup;
 			children = (
+				3DDB2A741E8F3F58009F91B0 /* StoryBoards */,
 				8AEAF0971E7F54D7003AC8C3 /* Extensions */,
 				8AEAF0981E7F54FE003AC8C3 /* CustomViews */,
 				8AEAF0941E7F5150003AC8C3 /* MainView */,
-				8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */,
-				8AEAF07D1E7DD35C003AC8C3 /* Main.storyboard */,
+				3DDB2A791E8F48DB009F91B0 /* OwnerData */,
 				8AEAF0831E7DD35C003AC8C3 /* Assets.xcassets */,
+				8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */,
 				8AEAF0851E7DD35C003AC8C3 /* LaunchScreen.storyboard */,
 				8AEAF0881E7DD35C003AC8C3 /* Info.plist */,
 				8AEAF0801E7DD35C003AC8C3 /* better_mood.xcdatamodeld */,
@@ -106,9 +128,9 @@
 		8AEAF0981E7F54FE003AC8C3 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				3DDB2A7A1E8F61E5009F91B0 /* roundButton.swift */,
 				8AEAF0901E7F134B003AC8C3 /* CustomView.swift */,
 				8AEAF0991E7F5D22003AC8C3 /* PushButtonView.swift */,
-				8AEAF09B1E7F7C61003AC8C3 /* CustomAlertView.swift */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -193,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDB2A761E8F3F8E009F91B0 /* OwnerData.storyboard in Resources */,
 				8AEAF0871E7DD35C003AC8C3 /* LaunchScreen.storyboard in Resources */,
 				8AEAF0841E7DD35C003AC8C3 /* Assets.xcassets in Resources */,
 				8AEAF07F1E7DD35C003AC8C3 /* Main.storyboard in Resources */,
@@ -258,9 +281,10 @@
 				8AEAF0931E7F4F1A003AC8C3 /* MainViewDataSource.swift in Sources */,
 				8AEAF07C1E7DD35C003AC8C3 /* MainView.swift in Sources */,
 				8AEAF0821E7DD35C003AC8C3 /* better_mood.xcdatamodeld in Sources */,
+				3DDB2A781E8F460C009F91B0 /* OwnerDataViewController.swift in Sources */,
 				8AEAF09A1E7F5D22003AC8C3 /* PushButtonView.swift in Sources */,
 				8AEAF0961E7F54A2003AC8C3 /* UIViewExtensions.swift in Sources */,
-				8AEAF09C1E7F7C61003AC8C3 /* CustomAlertView.swift in Sources */,
+				3DDB2A7B1E8F61E5009F91B0 /* roundButton.swift in Sources */,
 				8AEAF07A1E7DD35C003AC8C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
