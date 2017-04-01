@@ -35,6 +35,9 @@ class OwnerDataViewController: UIViewController {
 
     @IBAction func nextView(_ sender: UIButton) {
         
-        print("tapped")
+        let storyboard = UIStoryboard(name: "OwnerData", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"OwnerBasicInfo") 
+        self.present(viewController, animated: true)
+    
     }
 }

@@ -11,6 +11,7 @@
 		3DDB2A761E8F3F8E009F91B0 /* OwnerData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB2A751E8F3F8E009F91B0 /* OwnerData.storyboard */; };
 		3DDB2A781E8F460C009F91B0 /* OwnerDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */; };
 		3DDB2A7B1E8F61E5009F91B0 /* roundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB2A7A1E8F61E5009F91B0 /* roundButton.swift */; };
+		3DDB2A7D1E8F764E009F91B0 /* OnwerBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB2A7C1E8F764E009F91B0 /* OnwerBasicInfoViewController.swift */; };
 		8AEAF07A1E7DD35C003AC8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */; };
 		8AEAF07C1E7DD35C003AC8C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07B1E7DD35C003AC8C3 /* MainView.swift */; };
 		8AEAF07F1E7DD35C003AC8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEAF07D1E7DD35C003AC8C3 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		3DDB2A751E8F3F8E009F91B0 /* OwnerData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OwnerData.storyboard; sourceTree = "<group>"; };
 		3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerDataViewController.swift; sourceTree = "<group>"; };
 		3DDB2A7A1E8F61E5009F91B0 /* roundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundButton.swift; sourceTree = "<group>"; };
+		3DDB2A7C1E8F764E009F91B0 /* OnwerBasicInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnwerBasicInfoViewController.swift; sourceTree = "<group>"; };
 		4C952C0606D394310DABDD91 /* Pods-better-mood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-better-mood.release.xcconfig"; path = "Pods/Target Support Files/Pods-better-mood/Pods-better-mood.release.xcconfig"; sourceTree = "<group>"; };
 		8AEAF0761E7DD35C003AC8C3 /* better-mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "better-mood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEAF0791E7DD35C003AC8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDB2A771E8F460C009F91B0 /* OwnerDataViewController.swift */,
+				3DDB2A7C1E8F764E009F91B0 /* OnwerBasicInfoViewController.swift */,
 			);
 			name = OwnerData;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				8AEAF0961E7F54A2003AC8C3 /* UIViewExtensions.swift in Sources */,
 				3DDB2A7B1E8F61E5009F91B0 /* roundButton.swift in Sources */,
 				8AEAF07A1E7DD35C003AC8C3 /* AppDelegate.swift in Sources */,
+				3DDB2A7D1E8F764E009F91B0 /* OnwerBasicInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
