@@ -37,3 +37,18 @@ extension UIView{
         }, completion: completion)
     }
 }
+
+extension UITextField{
+    
+    
+    
+    func formatTextField(backgroundColor: UIColor, alpha:CGFloat, placeHolder: String, placeHolderColor: UIColor ){
+        
+        self.backgroundColor = backgroundColor
+        self.alpha = alpha
+        self.attributedPlaceholder = NSAttributedString(string: placeholder!,attributes: [NSForegroundColorAttributeName: placeHolderColor])
+
+    }
+    
+    
+}
