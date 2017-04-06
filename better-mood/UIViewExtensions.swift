@@ -47,6 +47,7 @@ extension UITextField{
         self.backgroundColor = backgroundColor
         self.alpha = alpha
         self.attributedPlaceholder = NSAttributedString(string: placeholder!,attributes: [NSForegroundColorAttributeName: placeHolderColor])
+        self.layer.cornerRadius = 25
 
     }
     

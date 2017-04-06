@@ -91,34 +91,86 @@
                                     <userGuides>
                                         <userLayoutGuide location="187" affinity="minX"/>
                                         <userLayoutGuide location="333" affinity="minY"/>
+                                        <userLayoutGuide location="499" affinity="minY"/>
                                     </userGuides>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYC-BJ-kpn">
-                                            <rect key="frame" x="93" y="303" width="188" height="30"/>
+                                        <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvO-Tw-BHb">
+                                            <rect key="frame" x="10" y="209" width="355" height="250"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="line" placeholder="¿Cual es tu nombre?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYC-BJ-kpn">
+                                                    <rect key="frame" x="7" y="97" width="165" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="165" id="MW8-rm-1NP"/>
+                                                        <constraint firstAttribute="height" constant="50" id="VAc-8w-WFe"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="line" placeholder="¿Cuando Naciste?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFL-nj-j1k">
+                                                    <rect key="frame" x="184" y="97" width="165" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="165" id="f6x-co-KEU"/>
+                                                        <constraint firstAttribute="height" constant="50" id="tWN-w5-NjW"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="line" placeholder="¿Dirección de correo?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-lt-CCT">
+                                                    <rect key="frame" x="7" y="155" width="342" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Dga-Ue-Pat"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuentanos acerca de ti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1de-Y9-1FN">
+                                                    <rect key="frame" x="49.5" y="40" width="256.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="188" id="47s-ka-DgS"/>
-                                                <constraint firstAttribute="height" constant="30" id="f6j-A4-p4W"/>
+                                                <constraint firstItem="nwC-lt-CCT" firstAttribute="leading" secondItem="bvO-Tw-BHb" secondAttribute="leading" constant="7" id="03G-qz-W3J"/>
+                                                <constraint firstItem="1de-Y9-1FN" firstAttribute="top" secondItem="bvO-Tw-BHb" secondAttribute="top" constant="40" id="19f-rL-iZQ"/>
+                                                <constraint firstItem="KYC-BJ-kpn" firstAttribute="top" secondItem="1de-Y9-1FN" secondAttribute="bottom" constant="27" id="4Bl-7E-IP3"/>
+                                                <constraint firstAttribute="bottom" secondItem="nwC-lt-CCT" secondAttribute="bottom" constant="45" id="4H8-rL-a1s"/>
+                                                <constraint firstItem="KYC-BJ-kpn" firstAttribute="leading" secondItem="bvO-Tw-BHb" secondAttribute="leading" constant="7" id="77S-M9-3Be"/>
+                                                <constraint firstItem="nwC-lt-CCT" firstAttribute="top" secondItem="bFL-nj-j1k" secondAttribute="bottom" constant="8" id="UEm-fK-oBp"/>
+                                                <constraint firstItem="bFL-nj-j1k" firstAttribute="top" secondItem="1de-Y9-1FN" secondAttribute="bottom" constant="27" id="UQP-6E-lSP"/>
+                                                <constraint firstItem="1de-Y9-1FN" firstAttribute="centerX" secondItem="bvO-Tw-BHb" secondAttribute="centerX" id="d9j-Ok-cqp"/>
+                                                <constraint firstAttribute="trailing" secondItem="bFL-nj-j1k" secondAttribute="trailing" constant="6" id="erK-T6-RMh"/>
+                                                <constraint firstAttribute="trailing" secondItem="nwC-lt-CCT" secondAttribute="trailing" constant="6" id="t3f-eU-Otw"/>
+                                                <constraint firstItem="bFL-nj-j1k" firstAttribute="leading" secondItem="KYC-BJ-kpn" secondAttribute="trailing" constant="12" id="z0W-HE-may"/>
                                             </constraints>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de Nacimiento" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFL-nj-j1k">
-                                            <rect key="frame" x="93" y="333" width="188" height="30"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZN3-c2-Uc8">
+                                            <rect key="frame" x="8" y="574" width="357" height="50"/>
+                                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="bID-Wb-B32"/>
-                                                <constraint firstAttribute="width" constant="188" id="kf3-U3-0Hl"/>
+                                                <constraint firstAttribute="height" constant="50" id="V87-Ky-cY2"/>
                                             </constraints>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <state key="normal" title="Continuar">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="ContinueButtonAction:" destination="bPp-Aq-stP" eventType="touchUpInside" id="Zgt-7h-V1Q"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="KYC-BJ-kpn" firstAttribute="top" secondItem="crj-lZ-IQ9" secondAttribute="top" constant="303" id="6ik-hj-en1"/>
-                                        <constraint firstItem="KYC-BJ-kpn" firstAttribute="leading" secondItem="crj-lZ-IQ9" secondAttribute="leading" constant="93" id="8Ck-9W-KZF"/>
-                                        <constraint firstItem="bFL-nj-j1k" firstAttribute="top" secondItem="KYC-BJ-kpn" secondAttribute="bottom" id="GoS-Fo-BS0"/>
-                                        <constraint firstItem="bFL-nj-j1k" firstAttribute="leading" secondItem="crj-lZ-IQ9" secondAttribute="leading" constant="93" id="zu3-dA-XUo"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZN3-c2-Uc8" secondAttribute="trailing" constant="10" id="3oU-Ea-IuG"/>
+                                        <constraint firstAttribute="trailing" secondItem="bvO-Tw-BHb" secondAttribute="trailing" constant="10" id="EHc-yL-BWJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZN3-c2-Uc8" secondAttribute="bottom" constant="43" id="S5M-6q-x5A"/>
+                                        <constraint firstItem="bvO-Tw-BHb" firstAttribute="leading" secondItem="crj-lZ-IQ9" secondAttribute="leading" constant="10" id="TA5-eY-Vzm"/>
+                                        <constraint firstItem="bvO-Tw-BHb" firstAttribute="top" secondItem="crj-lZ-IQ9" secondAttribute="top" constant="209" id="fe5-uL-vDS"/>
+                                        <constraint firstItem="ZN3-c2-Uc8" firstAttribute="leading" secondItem="crj-lZ-IQ9" secondAttribute="leading" constant="8" id="rid-Gh-NxQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="bvO-Tw-BHb" secondAttribute="bottom" constant="208" id="wEb-1t-rwf"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -133,7 +185,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ContinueButton" destination="ZN3-c2-Uc8" id="9NO-hh-YZ1"/>
+                        <outlet property="correoUsuario" destination="nwC-lt-CCT" id="qke-2X-9DT"/>
                         <outlet property="fechaNacimiento" destination="bFL-nj-j1k" id="bKm-Hf-YHi"/>
+                        <outlet property="userDataScreen" destination="bvO-Tw-BHb" id="DQ2-At-7Kq"/>
                         <outlet property="userNameTextField" destination="KYC-BJ-kpn" id="8U0-N1-Jeh"/>
                     </connections>
                 </viewController>

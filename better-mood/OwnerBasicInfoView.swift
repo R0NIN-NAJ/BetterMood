@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+struct UserInfo{
+    static let defaultsUserName = "BUSERNAME"
+    static let defaultBirthDate = "BBIRTHDATE"
+    static let defaultMail = "BMAIL"
+}
+
 
 extension OwnerBasicInfoViewController{
     
@@ -49,7 +55,7 @@ extension OwnerBasicInfoViewController{
         //Format date
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .none
-        dateFormatter.dateFormat = "dd-MM-yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy"
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
